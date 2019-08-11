@@ -1,0 +1,68 @@
+
+.citacao-bio {
+    font-size: 0.9em;
+    color: #5a5d64;
+    background-color: #D9E5E3;
+    border: .5em solid #1d1e20;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: transform 0.5s, box-shadow 0.5s;
+    transition-delay: 0s, 0.5s;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
+
+.citacao-bio:nth-of-type(odd) {
+    float: right;
+}
+
+.citacao-bio:nth-of-type(even) {
+    float: left;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Seleciona um a cada quatro elementos
+   de qualquer grupo de elementos irmãos,
+   começando do quarto elemento (4, 8 12, etc.). */
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.citacao-bio::before {
+    content: '“';
+    position: absolute;
+    font-size: 10em;
+    color: rgb(135, 145, 143);
+    line-height: .8;
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
+.citacao-bio {
+    transition: box-shadow 0.3s, transform 0.3s;
+    /* vale quando o usuário parou de interagir */
+    transition-delay: 0.3s, 0s;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+    /* vale quando o usuário começou a interagir */
+    transition-delay: 0s, 0.5s;
+}

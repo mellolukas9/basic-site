@@ -1,0 +1,202 @@
+body,
+header {
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+  text-decoration: none;
+}
+
+#meu-nome {
+  font-size: 1.5em;
+  color: white;
+}
+
+header {
+  background: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.menu li {
+  margin-left: 1em;
+}
+
+.menu li a {
+  display: block;
+  padding: 0.9em;
+  color: white;
+  text-decoration: none;
+}
+
+.a-hover {
+  background: rgb(103, 104, 112, 0.2);
+  border-radius: 0.2em;
+}
+
+.menu li .a-hover:hover,
+.menu li .a-hover:focus {
+  background-color: #586acc;
+  padding: 0.9em;
+  box-shadow: 0 0 1em #0d1a66; /* direita, baixo, esfumação sla e cor 0D1A66,rgb(48, 159, 233)*/
+  border-radius: 0.2em;
+}
+
+.menu li .github,
+.twitter,
+.linkedin {
+  margin-top: 0.5em;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  text-indent: -99999px;
+}
+
+.github {
+  background-image: url(../assets/github.png);
+}
+
+.twitter {
+  background-image: url(../assets/twitter.png);
+}
+
+.linkedin {
+  background-image: url(../assets/linkedin.png);
+}
+
+.subtitulo-texto {
+  font-size: 2em;
+  clear: both;
+  margin-top: 1em;
+  margin-bottom: 1.5;
+}
+
+#h2h2 {
+  margin-top: 0.5em;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main p {
+  text-align: justify;
+  margin: 1em 0;
+}
+
+.container {
+  font-size: 1.5em;
+  width: 90ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em 0;
+  margin-bottom: 3em;
+}
+
+.container > p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: rgb(13, 26, 102);
+  text-shadow: 1px 1px #000;
+  margin-right: 0.2ch;
+  line-height: 1;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.menu li .github:hover::after,
+.menu li .github:focus::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: black;
+  color: white;
+  top: 100%;
+  width: 300%;
+  right: 0;
+  text-indent: 0;
+  font-size: 0.75em;
+}
+
+.menu li .github:hover::before,
+.menu li .github:focus::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  transform: translateY(0.5em) rotate(45deg);
+}
+
+.habilidades {
+  margin: 1em 0;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0.25em;
+}
+
+.habilidades th {
+  color: white;
+  background-color: #0d1a66;
+  padding: 1em;
+}
+
+.coluna-habilidade {
+  color: white;
+  background-color: #0d1a66;
+  padding: 1em;
+  text-align: center;
+}
+
+.coluna-experiencia,
+td {
+  background-color: #eee;
+  color: black;
+  padding: 1em;
+  text-align: center;
+}
+
+td {
+  text-align: justify;
+}
+
+.habilidades [colspan] {
+  text-align: center;
+  font-style: italic;
+}
+
+.habilidades [rowspan] {
+  vertical-align: middle;
+}
+
+/* .clearfix {
+  color: #F2FFFC;
+  padding: 1em;
+  clear: both;
+  position: fixed;
+  bottom: none;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px black;
+  background-image: radial-gradient(ellipse at left bottom,
+      rgb(13, 26, 102, 0.8),
+      rgb(13, 26, 102, 0.8) 65%,
+      black 65%,
+      black 70%,
+      transparent 90%);
+  background-size: auto;
+} */

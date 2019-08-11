@@ -1,0 +1,68 @@
+body, header {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-decoration: none;
+  }
+  
+  #meu-nome {
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  header {
+      background: #1d1e20;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+     
+    .menu {
+      display: flex;
+      font-size: 1.5em; 
+    }
+     
+    .menu li {
+      margin-left: 1em;
+    }
+     
+    .menu li a {
+      display: block;
+      padding: 0.9em;
+      color: white;
+      text-decoration: none;
+    }
+  
+ .a-hover  {
+    background-color: green,
+} 
+.a-hover:hover,
+.a-hover:focus {
+      background-color: #586ACC;
+      padding: 0.9em;
+      box-shadow: 0 0 1em #0D1A66;  /* direita, baixo, esfumação sla e cor 0D1A66,rgb(48, 159, 233)*/ 
+      border-radius: 0.2em;
+    }
+  
+  .menu li 
+  .github, 
+  .twitter, 
+  .linkedin {
+    margin-top: 0.5em;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    text-indent: -99999px;
+  }
+  
+  .github {
+    background-image: url(../imagens/github.png);
+  }
+  
+  .twitter {
+    background-image: url(../imagens/twitter.png);
+  }
+  
+  .linkedin {
+    background-image: url(../imagens/linkedin.png);
+  }
